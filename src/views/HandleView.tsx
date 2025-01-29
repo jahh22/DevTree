@@ -14,6 +14,7 @@ export default function HandleView() {
     })
 
     if (isLoading) return <p className='text-center text-white'>...Cargando</p>
+
     if (error) return <Navigate to={'/404'} />
     if (data) return <HandleData data={data} />
 
